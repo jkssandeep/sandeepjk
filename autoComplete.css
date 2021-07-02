@@ -1,0 +1,255 @@
+.MuiAutocomplete-root {
+  position: relative;
+  width: 25%;
+  margin: 40px auto;
+}
+.MuiAutocomplete-fullWidth{
+  width: 100%;
+}
+.MuiAutocomplete-root * {
+  box-sizing: border-box;
+}
+.autocomplete__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 6px 12px;
+  border: solid 1px #cccccc;
+  background-color: #ffffff;
+}
+.removeitem{
+  cursor: pointer;
+  background: url('../assets/close.svg') center no-repeat;
+  background-size: 11px;
+  padding: 2px 13px;
+  }
+.autocomplete__box_brdbtm {
+  border-bottom: 1px solid #ccc !important;
+}
+.autocomplete__searching {
+  border-radius: 3px 3px 0 0;
+}
+.display {
+  display: none;
+}
+.MuiAutocomplete-inputRoot {
+  flex-grow: 1;
+  margin: 0 12px 0 0;
+  font-family: NotoSansKR;
+  font-size: 14px;
+  /* line-height: 2.07; */
+  color: #959595;
+  position:relative;
+}
+.MuiAutocomplete-inputRoot input {
+  width: 100%;
+  border: 0;
+  color: #959595;
+  background-color: transparent;
+}
+.MuiAutocomplete-inputRoot input:focus {
+  outline: none;
+}
+/* .MuiAutocomplete-inputFocused {
+  opacity: 0.2;
+} */
+.MuiAutocomplete-hasClearIcon {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+.MuiAutocomplete-hasClearIcon:hover {
+  background-color: #f5f0f0;
+  border-radius: 50px;
+  height: 23px;
+  padding: 5px;
+  width: 20px;
+  right: 14px;
+  top: -5px;
+  position: absolute;
+}
+.MuiAutocomplete-listbox {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  z-index: 1000;
+  position: absolute;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+.autocomplete__results__item--error {
+  color: #f00;
+}
+.MuiAutocomplete-option {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.fullwidth {
+  padding: 0px 0px;
+  cursor: pointer;
+}
+.load {
+  display: none;
+}
+.text-wrap {
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: left;
+  color: #5a5a5a;
+  /* line-height: 1.71; */
+  font-size: 14px;
+}
+.MuiAutocomplete-option:hover {
+  background: #f7f7f7;
+}
+.autoSelection:first-child {
+  background: #f3f1f9;
+}
+.focusdisable {
+  background: rgba(238, 7, 26, 0.075);
+}
+.focusdisable:hover {
+  background: rgba(238, 7, 26, 0.075);
+}
+.MuiAutocomplete-option.autocomplete__selected {
+  background: #dcd3f7;
+}
+
+.MuiAutocomplete-loading {
+  height: 16px;
+  width: 16px;
+  margin-left: 5px;
+}
+.animate-spin {
+  animation: spin 2s infinite linear;
+}
+/* .selectOnfocous{
+  cursor: none;
+    background: rgba(0, 180, 255, 0.075);
+} */
+.disableDiv {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.selectedOptionsList{
+  pointer-events: none;
+  background: #dcd3f7;
+}
+
+.disabledivunfocus {
+  background: #fff !important;
+}
+.dropdown {
+  transform: rotate(90deg);
+}
+.dropup {
+  transform: rotate(-90deg);
+}
+.MuiAutocomplete-hasPopupIcon {
+  cursor: pointer;
+  height: 12px;
+  width: 10px;
+  color: #cccccc;
+  position: absolute;
+  right:-8px;
+  top:3px;
+}
+.MuiAutocomplete-hasPopupIcon:hover {
+  background-color: #f5f0f0;
+  border-radius: 50px;
+  height: 25px;
+  padding: 7px;
+  width: 25px;
+  right:-17px;
+  top:-3px;
+}
+.blurredinputs {
+  opacity: 0.4;
+}
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+} */
+.tooltip .MuiAutocomplete-clearIndicator {
+  visibility: hidden;
+  background-color: #cacaca;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px 5px;
+  border: 1px solid #cacaca;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100000;
+  top: 135%;
+  right: 35%;
+  margin-left: -60px;
+  font-size: 12px;
+}
+.tooltip:hover .MuiAutocomplete-clearIndicator {
+  visibility: visible;
+}
+.Mui-focused {
+  border: 1px solid #808080;
+}
+.disabled {
+  pointer-events: none;
+}
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.MuiAutocomplete-tag{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    cursor:pointer;
+  }
+  .MuiAutocomplete-tag li{
+    padding:7px 8px 6px 16px;
+     float:left;
+    /* display: inline; */
+    background: #f7f7f7;
+    margin: 0 7px 0 0;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #333333;
+  }
